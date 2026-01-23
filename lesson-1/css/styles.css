@@ -2,43 +2,94 @@
 
 /* STEP 1: Named Selector
 ------------------------------------------------------- */
-
+h2 {
+    color: red;
+    font-weight: normal;
+}
 
 /* STEP 2: ID Selector
 ------------------------------------------------------- */
-
+#special {
+    color: blue;
+    font-style: italic;
+}
 
 /* STEP 3: Class Selector
 ------------------------------------------------------- */
-
+.project {
+    border: 2px solid green;
+    padding: 10px;
+    margin: 10px;
+}
+.about {
+    background-color: #black;
+}
 
 /* STEP 4: Contextual/Descendent Selector
 ------------------------------------------------------- */
-
+section p{
+    font-style: oblique;
+}
+.about p a{
+    text-decoration: none;
+    padding: 1px;
+    margin: 2px;
+    background-color: grey;
+    border: 2px solid black;
+}
 
 /* STEP 5: Grouped Selector
 ------------------------------------------------------- */
-
+h1, h2, h3 {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
 
 /* STEP 6: Pseudo-Class Selector
 ------------------------------------------------------- */
-
+a:link {
+    color: orange;
+}
+a:visited{
+    color: purple;
+    background-color: white !important;
+}
+a:hover{
+    font-weight: bold;
+}
 
 /* STEP 7: Structural Pseudo-Class Selector
 ------------------------------------------------------- */
-
+li:nth-child(3){
+    border: 2px dashed red;
+    margin: 5px 0px 5px 0px;
+    background-color: lightpink;
+}
 
 /* STEP 8: Pseudo-Element Selector
 ------------------------------------------------------- */
-
+p::first-line {
+    font-weight: bold;
+    text-transform: uppercase;
+}
 
 /* STEP 9: Combinator Selector
 ------------------------------------------------------- */
-
+h1 + p{
+    font-size: 1.2em;
+    color: brown;
+}
 
 /* STEP 10: Attribute Selector
 ------------------------------------------------------- */
-
+*[lang="es"] {
+    color: green;
+    font-weight: bold;
+}
 
 /* STEP 11: Getting Crazy
 ------------------------------------------------------- */
+.project.about h2::first-letter {
+    font-size: 200%;
+    color: orange;
+}
