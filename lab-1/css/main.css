@@ -1,0 +1,48 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+body{
+    padding-left: 23%;
+    padding-right: 23%;
+}
+h1{
+    margin: 0px;
+    display: inline-block;
+    letter-spacing: 0.2em;
+    font-weight:300;
+    font-size: 1.5em;
+    padding: 4px 4px 4px 4px;
+    border: 2px solid black;
+    text-transform: uppercase;
+}
+
+h2{
+    -webkit-transform:scale(0.8,1.5); /* https://stackoverflow.com/questions/6351013/can-i-stretch-text-using-css */
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    text-align: center;
+    font-size: 3em;
+}
+
+header > p{
+    font-weight: bold;
+    text-align: justify;
+    font-size: 1.5em;
+}
+main{
+    column-count: 3;
+}
+
+main > p{
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: justify;
+}
+
+p:not(:first-child){
+    text-indent: 1em;
+}
