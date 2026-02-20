@@ -23,19 +23,20 @@
 		}
 		/* STEP 1: Simple box shadow - x-offset y-offset blur-radius color */
 		.shadow {
-			
+			box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.5);
+			/* box-shadow:inset 0 0 10px rgba(0, 0, 0, 0.5); */
 		}
 		/* STEP 2: Box shadow with negative offsets and blur */
 		.shadow-negative {
-			
+			box-shadow: -3px -2px -5px rgba(0, 0, 0, 0.5);
 		}
 		/* STEP 3: Box shadow with offsets, blur, and shadow-spread value as well */
 		.shadow-spread {
-			
+			box-shadow: 0 0 5px 10px rgba(0, 0, 0, 0.5);
 		}
 		/* STEP 4: Box shadow with no offsets, blur and shadow-spread */
 		.shadow-offsets-0 {
-			
+			box-shadow: 0 15px 5px -10px rgba(0, 0, 0, 0.5);
 		}
 		/* STEP 5: Inset box shadow with keyword 'inset' at the end of the values */
 		.inset-shadow {
