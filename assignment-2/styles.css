@@ -1,18 +1,8 @@
-html{
-    box-sizing: border-box;
-}
-*, *::before, *::after {
-    box-sizing: inherit;
-}
+
 div#container {
-    min-width: 720px;
-    max-width: 1024px;
+    max-width: 70%;
     margin: 0 auto;
 }
-main{
-    display: flex;
-}
-
 header h1 {
     font-size: 1.5em;
     margin: 0.67em 0;
@@ -21,5 +11,18 @@ header h1 {
 header h1::after , header h1::before {
     content: "|";
     color: gray;
- 
+}
+p strong {
+    color: orange;
+}
+article {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+article img{
+    width: 100%;
+    grid-column: span 2;
+}
+article > img + h2, article > img + h2 + p {
+    grid-column: span 2;
 }
