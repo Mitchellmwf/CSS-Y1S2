@@ -23,6 +23,7 @@ html {
 	justify-content: center;
 }
 
+/* Tab */
 ul[role="tablist"] {
 	display: flex;
 	flex-direction: row;
@@ -30,6 +31,7 @@ ul[role="tablist"] {
 	padding: 0;
 }
 
+/* Tab buttons */
 ul[role="tablist"] li {
 	display: block;
 	padding: 10px;
@@ -40,6 +42,7 @@ ul[role="tablist"] li {
 	margin: 0px 10px 0px 0px;
 }
 
+/* Tab links */
 li a {
 	text-decoration: none;
 	color: black;
@@ -48,36 +51,13 @@ li a {
 }
 
 
-
+/* Tabs hidden */
 div[role="tabpanel"] {
 	display: none;
-	z-index: 100;
 }
 
-div[role="tabpanel"]:target {
-	display: block;
-	border: 3px solid black;
-	border-radius: 0 5px 5px 5px;
-	padding: 20px;
-}
-
-div[role="tabpanel"]:first-of-type:not(:target) {
-    display: none;
-}
-
-
-div[role="tabpanel"]:target ~ div[role="tabpanel"]:first-of-type {
-    display: none;
-}
-
-
-
-ul[role="tablist"] li:hover {
-	background-color: aliceblue;
-	
-}
-
-
+/* Active tab, and first one when to target selected*/
+ul[role="tablist"]:not(:has(~ div:target)) li:first-child,
 ul[role="tablist"]:has(~ #tabpanel1:target) li:nth-child(1),
 ul[role="tablist"]:has(~ #tabpanel2:target) li:nth-child(2),
 ul[role="tablist"]:has(~ #tabpanel3:target) li:nth-child(3) {
@@ -86,4 +66,19 @@ ul[role="tablist"]:has(~ #tabpanel3:target) li:nth-child(3) {
 	border: 3px solid black;
 	border-bottom: 3px white;
 	margin-bottom: -3px;
+}
+
+/* Show selected Tab content and first tab when no target select*/
+div[role="tabpanel"]:target, 
+div[role="tabpanel"]:not(:has(~ div:target)):first-of-type {
+	display: block;
+	border: 3px solid black;
+	border-radius: 0 5px 5px 5px;
+	padding: 20px;
+}
+
+
+/* blue on hover for fun */
+ul[role="tablist"] li:hover {
+	background-color: aliceblue;
 }
