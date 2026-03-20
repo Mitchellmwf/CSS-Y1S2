@@ -74,5 +74,16 @@ div[role="tabpanel"]:target ~ div[role="tabpanel"]:first-of-type {
 
 ul[role="tablist"] li:hover {
 	background-color: aliceblue;
+	
 }
 
+
+ul[role="tablist"]:has(~ #tabpanel1:target) li:nth-child(1),
+ul[role="tablist"]:has(~ #tabpanel2:target) li:nth-child(2),
+ul[role="tablist"]:has(~ #tabpanel3:target) li:nth-child(3) {
+	z-index: 201;
+	background-color: white;
+	border: 3px solid black;
+	border-bottom: 3px white;
+	margin-bottom: -3px;
+}
