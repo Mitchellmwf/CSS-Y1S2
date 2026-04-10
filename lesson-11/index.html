@@ -53,34 +53,62 @@
                     <textarea class="form-control" id="bio" rows="3" placeholder="Tell us about yourself"></textarea>
                 </div>
                 <!-- STEP 14: Build out an INPUT with add-ons for donation amount -->
-                
+                <label for="donation" class="form-label">Donation Amount</label>
                 <div class="input-group mb-3">
-                    
+                    <span class="input-group-text">
+                        <select class="form-select form-select-sm" id="currency">
+                            <option value="USD" selected>$</option>
+                            <option value="EUR">EUR</option>
+                            <option value="GBP">GBP</option>
+                        </select>
+                    </span>
+                    <input type="number" class="form-control" id="donation" placeholder="Amount">
+                    <span class="input-group-text">.00</span>
                 </div>
                 <!-- STEP 15: Insert a DIV for a collection of input elements, with a LABEL -->
-                
-                    
+                <div class="mb-3 d-block">
+                    <label class="form-label">Preferences</label>
                     <!-- STEP 16: Build a checkbox -->
-                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="subscribe" id="contactEmail">
+                        <label class="form-check-label" for="contactEmail">
+                            Subscribe to newsletter
+                        </label>
+                    </div>
                     <!-- STEP 17a: Build a radio button -->
-                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="contactMethod" value="darkMode" id="contactPhone">
+                        <label class="form-check-label" for="contactPhone">
+                            Dark mode
+                        </label>
+                    </div>
                     <!-- STEP 17b: Add another radio button -->
-                    
-                
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="contactMethod" value="lightMode" id="contactMail" checked >
+                        <label class="form-check-label" for="contactMail">
+                            Light mode
+                        </label>
+                    </div>
+                </div>
                 <!-- STEP 18: Build a toggle switch button -->
                 <div class="mb-3">
-                    
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="notifications" role="switch">
+                        <label class="form-check-label" for="notifications">Enable notifications</label>
+                    </div>
                 </div>
                 <!-- STEP 19: Assemble a range slider -->
                 <div class="mb-3">
-                    
+                    <label for="volume" class="form-label">Volume</label>
+                    <input type="range" class="form-control-range w-100" id="volume" min="0" max="100" step="5"> 
                 </div>
                 <!-- STEP 20: Craft a file upload widget -->
                 <div class="mb-4">
-                    
+                    <label for="formFile" class="form-label">Upload Profile Picture</label>
+                    <input class="form-control" type="file" id="formFile">
                 </div>
                 <!-- STEP 21: Complete the form with a submit BUTTON element -->
-                
+                <button type="submit" class="btn btn-primary">Submit</button>
             </form>
         </div>
     </div>
