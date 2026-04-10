@@ -6,6 +6,7 @@ body {
 table{
     width: 100%;
     border-collapse: collapse;
+    border-top: 1px solid #E0E0E0;
 }
 
 tbody tr:nth-child(2n-1) {
@@ -14,7 +15,7 @@ tbody tr:nth-child(2n-1) {
 
 tr {
     border-bottom: 1px solid #E0E0E0;
-    align-items: center;
+    align-content: center;
     height: 56px;
 }
 
@@ -34,4 +35,11 @@ tr:nth-child(n+6) td:nth-child(13) {
     padding: 2px 4px;
     border-radius: 4px;
     margin-left: 8px;
+}
+
+th {
+    text-align: left;
+}
+td:nth-child(1) {
+    text-align: center;
 }
