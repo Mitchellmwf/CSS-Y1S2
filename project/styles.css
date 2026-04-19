@@ -10,7 +10,7 @@ html{
 }
 body {
     font-family: Arial, sans-serif;
-    width: 75%;
+    width: 70vw;
     margin: 0 auto;
     /* background-color: rgba(255, 255, 255, 0.35); */
     padding: 1em;
@@ -23,7 +23,7 @@ header {
     text-align: center;
 }
 a {
-    color: purple;
+    color: rgb(128, 0, 128);
     text-underline-offset: 5px;
     font-weight: bold;
 }
@@ -205,4 +205,74 @@ section.container ul li:nth-child(7):hover{
 section.container ul li:nth-child(14){
     position: sticky;
     top: 1rem;
+}
+@media screen and ((min-width: 960px)){
+    .profile{
+        width: 15vw;
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        line-height: 1.4rem;
+        display: block;
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 1rem 1rem 1rem 1rem;
+        border-radius: 1em;
+        border: 2px solid rgba(255, 255, 255, 0.4);
+    }
+}
+h4{
+    margin: 0;
+}
+
+#contribute{
+    width: 80vw;
+    margin-top: 2rem;
+    margin-left: -10vw;
+    padding: 1rem;
+    display: inline-block;
+    padding: 0.5em 1em;
+    border: 4px solid rgba(173, 216, 230, 0.7);
+    background-color: rgba(173, 216, 230, 0.5);
+    border-radius: 1em;
+    
+    color: black;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+#contribute .container:nth-child(2) {
+    line-height: 2rem;
+}
+
+#contribute h2{
+    margin-top: 0.5rem;
+}
+.link-guidelines{
+    display: block;
+    width: fit-content;
+    padding: 0.5em 1em 1em 1em;
+    border: 2px solid rgba(128, 0, 128, .4);
+    background-color: rgba(128, 0, 128, 0.35);
+    border-radius: 1em;
+    color: black;
+    text-decoration: none;
+    margin: auto;
+}
+
+#files a{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5em 1em;
+    border: 2px solid rgba(128, 0, 128, .4);
+    background-color: rgba(128, 0, 128, .35);
+    border-radius: 1em;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+#files a:hover {
+    background-color: hotpink;
+    border-color: hotpink;
+    color: white;
+    transition: all 0.3s ease;
 }
