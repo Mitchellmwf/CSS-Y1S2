@@ -246,7 +246,7 @@ section.container ul li:nth-child(14){
     border: 2px solid rgba(255, 255, 255, 0.4);
 }
 /* current staged style will show on side for larger screens */
-@media screen and ((min-width: 1000px)){
+@media screen and ((min-width: 1260px)){
     .profile{
         width: 15vw;
         position: fixed;
