@@ -1,9 +1,8 @@
 @charset "utf-8";
 /* STEP 3: Apply basic layout styles */
 /* Universal box-sizing with inheritance (https://css-tricks.com/box-sizing/#article-header-id-6) */
-html {
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single+Ink:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
-}
 *, *::before, *::after {
 	box-sizing: inherit;
 
